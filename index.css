@@ -1,0 +1,129 @@
+body {
+    background-image: url("./assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    height: 82vh;
+    margin-top: 48px;
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 81px; */
+    justify-content: space-around;
+    color: var(--white-color);
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+h5 {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+}
+h1 {
+    font-size: 80px;
+    line-height: 100px;
+}
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.circle {
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: var(--white-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: black;
+    position: relative;
+}
+
+.circle:hover::after {
+    content: "";
+    width: 150%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    opacity: 0.1;
+    position: absolute;
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url("./assets/home/background-home-tablet.jpg");
+    }
+
+    main {
+        gap: 156px;
+
+        justify-content: space-between;
+        padding: 0 159px 90px;
+        margin-top: 106px;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+    }
+    h1 {
+        font-size: var(--heading-one-lg);
+        line-height: 150px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .circle {
+        width: 242px;
+        font-size: 32px;
+        line-height: 36.67px;
+        letter-spacing: 2px;
+    }
+}
+
+/* ::::::::::::::::::::  */
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url("./assets/home/background-home-desktop.jpg");
+    }
+
+    main {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .content {
+        text-align: left;
+        width: 450px;
+    }
+
+    h5 {
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+        font-size: 400;
+    }
+    h1 {
+        font-size: var(--heading-one-lg);
+        line-height: 171.9px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .circle {
+        width: 274px;
+    }
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --prmary-color: #d0d6f9;
+    --white-color: #ffffff;
+    --heading-one-lg: 150px;
+    --heading-two-lg: 100px;
+    --heading-three-lg: 56px;
+    --heading-four-lg: 32px;
+    --heading-five-lg: 28px;
+    --nav-text-lg: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.lg-menu-content {
+    display: none;
+}
+
+/* :::::::::::::::::::: TABLET SCREEN :::::::::::::::; */
+
+@media (min-width: 768px) {
+    header {
+        padding: 0 0 0 39px;
+    }
+    .icon {
+        display: none;
+    }
+
+    .lg-menu-content {
+        height: 96px;
+        list-style: none;
+        display: flex;
+        padding: 0 46px;
+        gap: 37px;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+    .link-container {
+        height: 100%;
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+    .link {
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 400px;
+        letter-spacing: 2.36px;
+    }
+
+    .link:hover::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: grey;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .link:focus::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .num {
+        display: none;
+    }
+}
+
+/* ::::::::::::::::::::: DESKTOP SCREEN ::::::::::::::: */
+@media (min-width: 1024px) {
+    header {
+        padding-top: 40px;
+        padding-left: 68px;
+        position: relative;
+    }
+    .lg-menu-content {
+        padding: 0px 123px;
+    }
+    .line {
+        display: block;
+        width: 40%;
+        height: 0.5px;
+        background: gray;
+        position: relative;
+        left: 64px;
+    }
+    .num {
+        display: block;
+    }
+
+    .link {
+        display: flex;
+        gap: 11px;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+}

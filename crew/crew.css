@@ -1,0 +1,201 @@
+body {
+    background-image: url(/photo/crew.map\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+    flex-direction: flex;
+    color: var(--white-color);
+    justify-content: center;
+    gap: 18px;
+}
+.moov{
+    display: none;
+}
+
+.one {
+    color: rgb(148, 144, 144);
+}
+
+.moon {
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+    display: flex;
+ 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+ol {
+    color: #D0D6F9;
+    list-style: none;
+    flex-direction: flex;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    letter-spacing: 2.33px;
+}
+
+li{
+    position: relative;
+
+}
+
+li:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+li:focus::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.love {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h1{
+    font-size: 56px;
+    padding-top: 20px;
+    color: #FFFFFF;
+
+}
+p{
+    font-size: 15px;
+    margin: 5%;
+    margin-top: 0%;
+    color:#D0D6F9;
+    text-align: center;
+
+}
+.long{
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background: gray;
+    position: relative;
+    left: 4px;
+    margin-top: 32px;
+}
+footer{
+    /* display: contents; */
+    /* flex-direction: column; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+}
+.eight{
+    /* flex-direction: column; */
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+}
+.trut{
+    font-size: 11px;
+    color: #D0D6F9;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.lie{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 32px;
+}
+.ayi{
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #D0D6F9;
+    padding-bottom: 12px;
+}
+.ebi{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .destination{
+       
+        display: block;
+        padding-left: 38.5px;
+        padding-top: 40px;
+        
+    }
+    h1{
+        font-size: 80px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .moov{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .destination{
+        font-size: 28px;
+        display: block;
+        padding-left: 166.5px;
+        gap: 54px;
+    }
+   .mool{
+    display: none;
+   }
+    .moov{
+       display: block;
+    }
+   /* .brain{
+    display: flex;
+    flex-direction: row;
+    /* gap: 157px; */
+   }
+   /* .mommy{
+    padding-right: 164px;
+   }
+   .moon{
+    padding-left: 230px;
+   }  */
